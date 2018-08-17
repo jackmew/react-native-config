@@ -22,7 +22,7 @@ def getCurrentFlavor() {
 }
 
 def loadDotEnv(flavor = getCurrentFlavor()) {
-    def envFile = ".env"
+    def envFile = ".env.android.production"
 
     if (System.env['ENVFILE']) {
         envFile = System.env['ENVFILE']
